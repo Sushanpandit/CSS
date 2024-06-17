@@ -1,0 +1,39 @@
+img{
+    height: 100px;
+    margin: 40px;
+    border-radius: 100px;
+}
+.main{
+    width: 80%;
+    height: 43rem;
+    margin: 100px;
+    box-shadow: 20px 20px 20px black;
+    border-radius: 20px;
+    display: flex;
+}
+.left{
+    width: 30%;
+    height: 40rem;
+    background-color: crimson;
+    border-radius: 20px 0px 0px 20px;
+}
+.right{
+    margin-left: 30px;
+    width: 80%;
+    
+}
+.inner1,.inner2{
+    display: flex;
+}
+.phone{
+    margin-left: 100px;
+}
+.view{
+    margin-left: 100px;
+}
+body {
+    font-family: 'ABeeZee';font-size: 22px;
+}
+h3,p{
+    text-align: center;
+}

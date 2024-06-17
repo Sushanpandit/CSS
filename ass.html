@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .pagination {
+            display: inline-block;
+        }
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        .pagination a.active {
+            background-color: green;
+            color: white;
+        }
+        a:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagination">
+    <table border="1"cellspacing="0px">
+        <tr>
+           
+                <td><a href="#" onclick="move(-1)">«</a></td>
+                
+                <td><a href="#" class="num">1</a></td>
+                <td><a href="#" class="num">2</a></td>
+                <td><a href="#" class="num active">3</a></td>
+                <td><a href="#" class="num">4</a></td>
+                <td><a href="#" class="num">5</a></td>
+                <td><a href="#" class="num">6</a></td>
+                <td><a href="#" class="num">7</a></td>
+                <td><a href="#" onclick="move(1)">»</a></td>
+            </div>
+        </tr>
+    </table>
+
+    <script>
+        var index = 2; // Start at the third element
+        function move(n) {
+            var elements = document.getElementsByClassName('num');
+            elements[index].classList.remove('active');
+            index = (index + n + elements.length) % elements.length;
+            elements[index].classList.add('active');
+        }
+    </script>
+</body>
+</html>

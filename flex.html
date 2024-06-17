@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: red;
+            display: flex;
+           /* flex-direction: row;
+            flex-wrap: wrap-reverse;*/
+            flex-flow: column wrap;
+            height: 50rem;
+            justify-content: center;
+            /*align-items: center;*/
+            flex-direction: row;
+            align-items: baseline;
+            
+            
+        }
+        .a1{
+            background-color: antiquewhite;
+            
+        }
+        .a2{
+            background-color: rgb(14, 205, 205);
+        }
+        .a3{
+            background-color: rgb(77, 255, 0);
+            flex-grow: 2;
+           /* order: -2;*/
+           width: 600px;
+           flex-shrink: 1;
+        }
+        .a4{
+            background-color: rgb(255, 0, 128);
+           /* order: 1;*/
+        }
+        .a5{
+            background-color: rgb(195, 0, 255);
+             
+        }
+        .a6{
+            background-color: rgb(255, 149, 0);
+        }
+        .a7{
+            background-color: rgb(228, 147, 208);
+           /* order: -1;*/
+           flex-grow: 7;
+        }
+        .a8{
+            background-color: rgb(138, 199, 7);
+        }
+        .ssp{
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="a1 ssp">One</div>
+    <div class="a2 ssp">Two</div>
+    <div class="a3 ssp">Three</div>
+    <div class="a4 ssp">Four</div>
+    <div class="a5 ssp">Five</div>
+    <div class="a6 ssp">Six</div>
+    <div class="a7 ssp">Seven</div>
+    <div class="a8 ssp">Eight</div></div>
+</body>
+</html>
